@@ -1,0 +1,65 @@
+.secton-login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-background-dark,
+    $color-background-light
+  );
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 56.2%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 50%;
+  }
+  .card {
+    width: 90%;
+    transform: none;
+
+    &__data {
+      transform: none;
+    }
+
+    &__header {
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes login {
+    0% {
+      opacity: 0;
+      top: 50%;
+      left: 50%;
+      transform: scale(4) translate(-50%, -50%);
+    }
+    49% {
+      opacity: 0;
+    }
+
+    50% {
+      color: $color-grey-light-2;
+      opacity: 0.5;
+      top: 50%;
+      left: 50%;
+      transform: scale(8) translate(-10%, -10%);
+    }
+
+    100% {
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%) scale(1);
+      color: $color-grey-dark;
+    }
+  }
+}

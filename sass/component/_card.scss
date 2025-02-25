@@ -1,0 +1,32 @@
+.card {
+  width: 70%;
+  max-width: 50rem;
+  margin: 0 auto;
+  /*   height: 30rem; */
+  background-color: rgba($color: $color-white, $alpha: 0.6);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: 0.2);
+  transform: skewX(-12deg);
+
+  &__data {
+    max-width: 100%;
+    transform: skewX(12deg);
+    /*     height: 24rem; */
+    padding-top: $margin-top-lg;
+  }
+  &__header {
+    position: absolute;
+    top: 0.2rem;
+    left: 2rem;
+    animation: login 1.5s ease-in-out;
+    color: $color-grey-dark;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+}

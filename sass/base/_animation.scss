@@ -1,0 +1,43 @@
+@keyframes login {
+  0% {
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: scale(5) translate(-50%, -50%);
+  }
+  49% {
+    opacity: 0;
+  }
+
+  50% {
+    color: $color-grey-light-2;
+    opacity: 0.5;
+    top: 50%;
+    left: 50%;
+    transform: scale(10) translate(-10%, -10%);
+  }
+
+  100% {
+    top: 0.2rem;
+    left: 2rem;
+    transform: scale(1);
+    color: $color-grey-dark;
+  }
+}
+
+@keyframes form {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

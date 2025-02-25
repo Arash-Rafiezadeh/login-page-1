@@ -1,0 +1,64 @@
+.btn-group {
+  width: 90%;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: $color-white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba($color: $color-black, $alpha: 0.2);
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1.5rem 3rem rgba($color: $color-black, $alpha: 0.3);
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: 0.2);
+  }
+
+  &__login {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-background-dark,
+      $color-background-light
+    );
+  }
+
+  &__signup {
+    & p {
+      background-image: linear-gradient(
+        to right,
+        $color-background-light,
+        $color-background-dark
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    &:hover {
+      & p {
+        color: $color-white;
+      }
+    }
+  }
+}
