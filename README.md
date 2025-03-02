@@ -1,1 +1,1 @@
-This a simple animated login page
+This is a simple animated login page
